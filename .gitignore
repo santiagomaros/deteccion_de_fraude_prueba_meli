@@ -1,0 +1,28 @@
+# Datos de la prueba (confidenciales, entregados por el evaluador)
+mercadolibre_fraud_dataset_data.csv
+*.csv
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Artefactos de modelos
+*.pkl
+*.joblib
+
+# Sistema
+.DS_Store
