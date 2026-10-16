@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Datos crudos de la prueba (CSV del evaluador; no se versiona).
+    meta:
+      # Solo dbt-duckdb (desarrollo local): lee el CSV como texto. El tipado y la limpieza se hacen en stg_fraude.
+      # En producción esta fuente sería una tabla del catálogo (p. ej. Glue/Athena) y esta clave se ignora.
+      external_location: "read_csv('{{ env_var('FRAUDE_CSV_PATH', '../mercadolibre_fraud_dataset_data.csv') }}', header=true, all_varchar=true)"
+    tables:
+      - name: fraude
+        description: Una fila por operación. Columnas A–S anónimas, Monto y Fraude (objetivo).
