@@ -1,0 +1,29 @@
+name: fraude_meli
+version: "1.0.0"
+config-version: 2
+profile: fraude_meli
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages", "logs"]
+
+# Parámetros FIJOS de las features. Salen del EDA (src/eda/eda_guiado.ipynb) y son constantes:
+# dbt no calcula nada a partir de estadísticas del dataset completo (eso sería fuga hacia test).
+vars:
+  paises_modelo: ["AR", "BR", "MX", "ES", "US", "UY"]   # el resto de países se agrupa en OTRO
+  tope_m: 4                                              # M agrupada en >= 4
+  tope_n: 3                                              # N agrupada en >= 3
+  tope_p: 5                                              # P agrupada en >= 5
+  tasa_fraude_min: 0.20                                  # guardia de volumen/deriva (solo avisa)
+  tasa_fraude_max: 0.35
+
+models:
+  fraude_meli:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
