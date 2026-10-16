@@ -1,0 +1,157 @@
+Filas: 16880  |  Columnas: 21  |  Tasa de fraude: 27.32%
+Filas duplicadas exactas: 1 (0.01%)
+
+=== A ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 21
+min 0 | p25 0 | mediana 0 | p75 0 | p95 2 | p99 5 | max 30
+media 0.3092 | desv 1.094 | ceros 84.3% | negativos 0
+
+=== B ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 21
+min -1 | p25 4 | mediana 7 | p75 11 | p95 16 | p99 18 | max 20
+media 7.645 | desv 4.686 | ceros 0.0% | negativos 125
+
+=== C ===
+tipo: entero | faltantes: 3197 (18.94%) | únicos: 9782
+min 0 | p25 1172 | mediana 6173 | p75 2.688e+04 | p95 3.248e+05 | p99 4.531e+05 | max 6.173e+05
+media 3.924e+04 | desv 9.104e+04 | ceros 0.8% | negativos 0
+tasa de fraude si falta: 17.3% | si no falta: 29.7%
+
+=== D ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 31
+min 0 | p25 0 | mediana 0 | p75 0 | p95 1 | p99 4 | max 180
+media 0.1987 | desv 2.043 | ceros 94.4% | negativos 0
+
+=== E ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 23
+min 0 | p25 0 | mediana 0 | p75 0 | p95 3 | p99 8 | max 45
+media 0.4337 | desv 1.537 | ceros 84.5% | negativos 0
+
+=== F ===
+tipo: decimal | faltantes: 0 (0.00%) | únicos: 153
+min 0 | p25 0 | mediana 0 | p75 0 | p95 0.038 | p99 0.5 | max 1
+media 0.01588 | desv 0.09873 | ceros 88.4% | negativos 0
+
+=== G ===
+tipo: decimal | faltantes: 0 (0.00%) | únicos: 106
+min 0 | p25 0 | mediana 0 | p75 0 | p95 0 | p99 0.107 | max 1
+media 0.0052 | desv 0.05942 | ceros 97.3% | negativos 0
+
+=== H ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 14
+min 0 | p25 0 | mediana 0 | p75 0 | p95 0 | p99 2 | max 21
+media 0.0503 | desv 0.531 | ceros 98.3% | negativos 0
+
+=== I ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 17
+min 0 | p25 0 | mediana 0 | p75 0 | p95 1 | p99 4 | max 24
+media 0.1441 | desv 0.8247 | ceros 94.8% | negativos 0
+
+=== J ===
+tipo: texto/categórica | faltantes: 0 (0.00%) | únicos: 19
+top 8 (n, % filas, tasa fraude):
+         AR:   9329 ( 55.3%)  fraude 28.1%
+         BR:   4428 ( 26.2%)  fraude 24.8%
+         MX:   2366 ( 14.0%)  fraude 9.1%
+         ES:    314 (  1.9%)  fraude 93.9%
+         US:    230 (  1.4%)  fraude 84.8%
+         UY:    180 (  1.1%)  fraude 100.0%
+         CA:     12 (  0.1%)  fraude 0.0%
+         GB:      8 (  0.0%)  fraude 0.0%
+
+=== K ===
+tipo: decimal | faltantes: 12864 (76.21%) | únicos: 86
+min 0.12 | p25 0.58 | mediana 0.68 | p75 0.8 | p95 0.93 | p99 0.97 | max 0.99
+media 0.6821 | desv 0.1532 | ceros 0.0% | negativos 0
+tasa de fraude si falta: 24.5% | si no falta: 36.2%
+
+=== L ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 8
+min 0 | p25 0 | mediana 0 | p75 1 | p95 2 | p99 3 | max 7
+media 0.4323 | desv 0.6638 | ceros 64.3% | negativos 0
+valores (n, % filas, tasa fraude):
+        0.0:  10847 ( 64.3%)  fraude 27.7%
+        1.0:   5058 ( 30.0%)  fraude 23.9%
+        2.0:    748 (  4.4%)  fraude 38.4%
+        3.0:    186 (  1.1%)  fraude 51.1%
+        4.0:     26 (  0.2%)  fraude 34.6%
+        5.0:      9 (  0.1%)  fraude 55.6%
+        6.0:      5 (  0.0%)  fraude 0.0%
+        7.0:      1 (  0.0%)  fraude 0.0%
+
+=== M ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 11
+min 1 | p25 1 | mediana 1 | p75 2 | p95 3 | p99 6 | max 13
+media 1.544 | desv 1.022 | ceros 0.0% | negativos 0
+valores (n, % filas, tasa fraude):
+        1.0:  11344 ( 67.2%)  fraude 23.6%
+        2.0:   3448 ( 20.4%)  fraude 32.5%
+        3.0:   1308 (  7.7%)  fraude 39.3%
+        4.0:    386 (  2.3%)  fraude 42.7%
+        5.0:    202 (  1.2%)  fraude 31.2%
+        6.0:     90 (  0.5%)  fraude 37.8%
+        7.0:     52 (  0.3%)  fraude 26.9%
+        9.0:     20 (  0.1%)  fraude 50.0%
+        8.0:     20 (  0.1%)  fraude 40.0%
+       10.0:      9 (  0.1%)  fraude 11.1%
+       13.0:      1 (  0.0%)  fraude 100.0%
+
+=== N ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 10
+min 1 | p25 1 | mediana 1 | p75 1 | p95 2 | p99 3 | max 10
+media 1.092 | desv 0.4081 | ceros 0.0% | negativos 0
+valores (n, % filas, tasa fraude):
+        1.0:  15767 ( 93.4%)  fraude 26.5%
+        2.0:    826 (  4.9%)  fraude 36.9%
+        3.0:    201 (  1.2%)  fraude 46.8%
+        4.0:     51 (  0.3%)  fraude 41.2%
+        5.0:     22 (  0.1%)  fraude 22.7%
+        6.0:      5 (  0.0%)  fraude 60.0%
+        7.0:      4 (  0.0%)  fraude 25.0%
+        8.0:      2 (  0.0%)  fraude 50.0%
+        9.0:      1 (  0.0%)  fraude 100.0%
+       10.0:      1 (  0.0%)  fraude 100.0%
+
+=== O ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 4
+min 0 | p25 0 | mediana 0 | p75 0 | p95 0 | p99 0 | max 3
+media 0.009419 | desv 0.1166 | ceros 99.2% | negativos 0
+valores (n, % filas, tasa fraude):
+        0.0:  16750 ( 99.2%)  fraude 27.2%
+        1.0:    108 (  0.6%)  fraude 48.1%
+        2.0:     15 (  0.1%)  fraude 33.3%
+        3.0:      7 (  0.0%)  fraude 28.6%
+
+=== P ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 14
+min 1 | p25 1 | mediana 1 | p75 2 | p95 4 | p99 5 | max 41
+media 1.631 | desv 1.088 | ceros 0.0% | negativos 0
+
+=== Q ===
+tipo: decimal | faltantes: 0 (0.00%) | únicos: 605 | con coma de miles: 24
+min 0 | p25 0 | mediana 0 | p75 0 | p95 0 | p99 244.3 | max 2275
+media 8.445 | desv 74.37 | ceros 96.1% | negativos 0
+
+=== R ===
+tipo: decimal | faltantes: 0 (0.00%) | únicos: 109 | con coma de miles: 6
+min 0 | p25 0 | mediana 0 | p75 0 | p95 0 | p99 0 | max 2026
+media 1.995 | desv 38.22 | ceros 99.2% | negativos 0
+
+=== S ===
+tipo: decimal | faltantes: 0 (0.00%) | únicos: 6467
+min -1 | p25 9.56 | mediana 20.64 | p75 39.21 | p95 89.77 | p99 97.14 | max 99.97
+media 29.13 | desv 26.51 | ceros 0.0% | negativos 136
+
+=== Monto ===
+tipo: decimal | faltantes: 0 (0.00%) | únicos: 9616 | con coma de miles: 238
+min 0.05 | p25 33.8 | mediana 81.64 | p75 193.4 | p95 531.9 | p99 1137 | max 1.254e+04
+media 161.8 | desv 275.5 | ceros 0.0% | negativos 0
+
+=== Fraude ===
+tipo: entero | faltantes: 0 (0.00%) | únicos: 2
+min 0 | p25 0 | mediana 0 | p75 1 | p95 1 | p99 1 | max 1
+media 0.2732 | desv 0.4456 | ceros 72.7% | negativos 0
+valores (n, % filas, tasa fraude):
+        0.0:  12269 ( 72.7%)  fraude 0.0%
+        1.0:   4611 ( 27.3%)  fraude 100.0%
+

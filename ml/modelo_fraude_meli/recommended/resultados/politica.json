@@ -1,0 +1,14 @@
+{
+ "modelo_version": "b0953c27",
+ "precisiones_objetivo": {
+  "rechazar": 0.9,
+  "revision_manual": 0.7,
+  "autenticacion_adicional": 0.5
+ },
+ "umbrales_score": {
+  "rechazar": 0.7695594729097711,
+  "revision_manual": 0.48258402288932356,
+  "autenticacion_adicional": 0.22112060464359062
+ },
+ "origen": "predicciones fuera de muestra (CV 5 folds) sobre train"
+}

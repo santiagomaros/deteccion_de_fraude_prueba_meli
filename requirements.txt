@@ -1,0 +1,15 @@
+# Dependencias del proyecto (versiones con las que se desarrolló; Python 3.14).
+# XGBoost y LightGBM en macOS requieren OpenMP:  brew install libomp
+dbt-core==1.12.6
+dbt-duckdb==1.11.0
+duckdb==1.5.6
+ipykernel==7.4.0
+jupyter_client==8.10.0
+lightgbm==4.7.0
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.18.1
+seaborn==0.13.2
+xgboost==3.4.1
