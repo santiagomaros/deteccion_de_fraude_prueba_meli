@@ -26,3 +26,21 @@ dbt/logs/
 
 # Sistema
 .DS_Store
+
+# DuckDB local (resultado de dbt)
+*.duckdb
+*.duckdb.wal
+dbt/.user.yml
+
+# Artefactos del modelo y datos intermedios
+ml/modelo_fraude_meli/artefactos/
+*.parquet
+
+# Informes
+reports/Informe_Prueba_ML_Fraude_Mercado_Libre.docx
+reports/Informe_Prueba_ML_Fraude_Mercado_Libre.pdf
+
+docs/*
+CLAUDE.md
+ejercicio.md
+reports/*.pages
