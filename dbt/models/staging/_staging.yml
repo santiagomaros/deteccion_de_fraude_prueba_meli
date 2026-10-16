@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_fraude
+    description: Datos crudos tipados y limpios (coma de miles, vacíos como NULL). Una fila por operación.
+    columns:
+      - name: row_id
+        description: Posición de la fila en el archivo de origen.
+        data_tests: [unique, not_null]
+      - name: fraude
+        description: Objetivo (1 = fraude).
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: false
+      - name: monto
+        data_tests: [not_null]
+      - name: j
+        description: País (código de 2 letras).
+        data_tests: [not_null]

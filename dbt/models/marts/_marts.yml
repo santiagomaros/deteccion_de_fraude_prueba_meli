@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: mart_fraude_features
+    description: >
+      Features sin estado, una fila por operación. Lo que se aprende de los datos
+      (medianas, cuartiles, codificadores, escalado) lo ajusta el `processor` solo con train.
+    columns:
+      - name: row_id
+        data_tests: [unique, not_null]
+      - name: fraude
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: [0, 1], quote: false}
+      - name: j_grp
+        description: País agrupado (6 países + OTRO).
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: ["AR", "BR", "MX", "ES", "US", "UY", "OTRO"]}
+      - name: l_cat
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: {values: ["0", "1", "2", "3+"]}
+      - name: m_cap4
+        data_tests:
+          - accepted_values:
+              arguments: {values: [1, 2, 3, 4], quote: false}
+      - name: n_cap3
+        data_tests:
+          - accepted_values:
+              arguments: {values: [1, 2, 3], quote: false}
+      - name: p_cap5
+        data_tests:
+          - accepted_values:
+              arguments: {values: [1, 2, 3, 4, 5], quote: false}
+      - name: monto
+        data_tests: [not_null]
+      - name: log1p_monto
+        data_tests: [not_null]
+
+unit_tests:
+  - name: mart_agrupaciones_y_logs
+    description: Topes, categorías, agrupación de países y log1p sobre filas construidas a mano.
+    model: mart_fraude_features
+    given:
+      - input: ref('int_fraude_senales')
+        rows:
+          - {row_id: 1, fraude: 1, j: UY, l: 0, m: 9, n: 7, p: 41, monto: 0.0, c: null, q: 0.0}
+          - {row_id: 2, fraude: 0, j: CA, l: 2, m: 2, n: 1, p: 1,  monto: 99.0, c: 9, q: 0.0}
+          - {row_id: 3, fraude: 0, j: AR, l: 6, m: 4, n: 3, p: 5,  monto: 0.0, c: 0, q: 0.0}
+    expect:
+      rows:
+        - {row_id: 1, j_grp: UY,   l_cat: "0",  m_cap4: 4, n_cap3: 3, p_cap5: 5}
+        - {row_id: 2, j_grp: OTRO, l_cat: "2",  m_cap4: 2, n_cap3: 1, p_cap5: 1}
+        - {row_id: 3, j_grp: AR,   l_cat: "3+", m_cap4: 4, n_cap3: 3, p_cap5: 5}
